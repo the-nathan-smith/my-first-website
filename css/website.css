@@ -1,7 +1,64 @@
+/* Universal */
 body {
-  padding-top: 70px;
+  height: 100vh;
+  font-family: 'Archivo Black', sans-serif;
 }
-body>div.container {
-  width: 80%;
-  margin: auto;
+.white-txt {
+  color: #fff!important;
+}
+.red-txt {
+  color: #c33434!important;
+}
+.btn-black {
+  border: 3px solid #212529;
+  color: #212529;
+}
+.chonk {
+  background-color: black;
+  padding: 7px 20px;
+  border-radius: 12px;
+}
+  .chonk sup {
+    top: -21px;
+    font-size: 22px;
+  }
+/* Headings */
+h1, .h1 {
+  font-size: 50px;
+}
+h2, .h2 {
+  font-size: 35px;
+}
+/* Decorative Lines */
+.line-one {
+  width: 70px;
+  height: 8px;
+  background-color: #000;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: -12px;
+  top: 0px;
+}
+.line-two {
+  width: 70px;
+    height: 8px;
+    background-color: #000;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: -11px;
+    top: 15px;
+}
+/* Banner */
+.banner {
+  height: 90vh;
+  background: linear-gradient(to right, rgb(252, 92, 125), rgb(106, 130, 251));
+}
+  .banner .container {
+    display: flex;
+    height: 100%;
+  }
+
+/* Music Videos (Front Page) */
+.music-videos {
+  padding: 80px;   
 }
