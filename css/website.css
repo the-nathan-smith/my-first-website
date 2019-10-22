@@ -62,3 +62,9 @@ h2, .h2 {
 .music-videos {
   padding: 80px;   
 }
+/* Music Videos Media Queries */
+@media(max-width: 991px){
+  .music-videos iframe {
+    height: 320px;
+  }
+}
