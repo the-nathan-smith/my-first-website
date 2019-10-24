@@ -27,6 +27,7 @@ body {
     top: -21px;
     font-size: 22px;
   }
+
 /* Headings */
 h1, .h1 {
   font-size: 50px;
@@ -34,25 +35,7 @@ h1, .h1 {
 h2, .h2 {
   font-size: 35px;
 }
-/* Decorative Lines */
-.line-one {
-  width: 70px;
-  height: 8px;
-  background-color: #000;
-  transform: rotate(-45deg);
-  position: absolute;
-  left: -12px;
-  top: 0px;
-}
-.line-two {
-  width: 70px;
-    height: 8px;
-    background-color: #000;
-    transform: rotate(-45deg);
-    position: absolute;
-    left: -11px;
-    top: 15px;
-}
+
 /* Banner */
 .banner {
   height: 90vh;
@@ -67,9 +50,27 @@ h2, .h2 {
 .music-videos {
   padding: 80px;   
 }
-/* Music Videos Media Queries */
-@media(max-width: 991px){
-  .music-videos iframe {
-    height: 320px;
+  /* Music Videos Media Queries */
+  @media(max-width: 991px){
+    .music-videos iframe {
+      height: 320px;
+    }
   }
+
+/* Inner Page Content */
+.content-title {
+  padding: 80px 0px 40px 0px;
+}
+.album-info p {
+  margin-bottom: 0px;
+}
+.album-info p.album-and-artist {
+  font-size: 24px;
+}
+.album-info a {
+  color: #212529;
+  transition: all 0.6s;
+}
+.album-info a:hover {
+  color: rgb(195, 89, 177);
 }
