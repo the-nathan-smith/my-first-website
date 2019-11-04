@@ -5,11 +5,11 @@ body {
 }
 
 .white-txt {
-  color: #fff !important;
+  color: white;
 }
 
 .red-txt {
-  color: #c33434 !important;
+  color: #c33434;
 }
 
 .btn-black-border {
@@ -20,7 +20,7 @@ body {
 
 .btn-black-border:hover {
   background-color: #fc5c7d;
-  color: #fff;
+  color: white;
 }
 
 .branding {
