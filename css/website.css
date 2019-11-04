@@ -1,37 +1,43 @@
 /* Universal */
 body {
   height: 100vh;
-  font-family: 'Archivo Black', sans-serif;
+  font-family: "Archivo Black", sans-serif;
 }
+
 .white-txt {
-  color: #fff!important;
+  color: #fff !important;
 }
+
 .red-txt {
-  color: #c33434!important;
+  color: #c33434 !important;
 }
+
 .btn-black-border {
   border: 3px solid #212529;
   color: #212529;
   transition: all 0.6s;
 }
-  .btn-black-border:hover {
-    background-color: rgb(252, 92, 125);
-    color: #fff;
-  }
+
+.btn-black-border:hover {
+  background-color: #fc5c7d;
+  color: #fff;
+}
+
 .branding {
   background-color: black;
   padding: 7px 20px;
   border-radius: 12px;
 }
-  .branding sup {
-    top: -21px;
-    font-size: 22px;
-  }
+.branding sup {
+  top: -21px;
+  font-size: 22px;
+}
 
 /* Headings */
 h1, .h1 {
   font-size: 50px;
 }
+
 h2, .h2 {
   font-size: 35px;
 }
@@ -39,38 +45,44 @@ h2, .h2 {
 /* Banner */
 .banner {
   height: 90vh;
-  background: linear-gradient(to right, rgb(252, 92, 125), rgb(106, 130, 251));
+  background: linear-gradient(to right, #fc5c7d, #6a82fb);
 }
-  .banner .container {
-    display: flex;
-    height: 100%;
-  }
+.banner .container {
+  display: flex;
+  height: 100%;
+}
 
 /* Music Videos (Front Page) */
 .music-videos {
-  padding: 80px;   
+  padding: 80px;
 }
-  /* Music Videos Media Queries */
-  @media(max-width: 991px){
-    .music-videos iframe {
-      height: 320px;
-    }
-  }
 
+/* Music Videos Media Queries */
+@media (max-width: 991px) {
+  .music-videos iframe {
+    height: 320px;
+  }
+}
 /* Inner Page Content */
 .content-title {
   padding: 80px 0px 40px 0px;
 }
+
 .album-info p {
   margin-bottom: 0px;
 }
+
 .album-info p.album-and-artist {
   font-size: 24px;
 }
+
 .album-info a {
   color: #212529;
   transition: all 0.6s;
 }
+
 .album-info a:hover {
-  color: rgb(195, 89, 177);
+  color: #c359b1;
 }
+
+/*# sourceMappingURL=website.css.map */
