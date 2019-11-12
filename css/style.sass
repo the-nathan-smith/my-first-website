@@ -2,6 +2,7 @@
 
 $red: #c33434
 $pink: rgb(252, 92, 125)
+$link-black: rgba(0,0,0,.9)
     
 // Universal
 body
@@ -75,5 +76,40 @@ h2, .h2
   color: rgb(195, 89, 177)
 
 // New Music
-.new-music-img
-  margin-bottom: 20px
+.new-music-content
+  min-height: 66.4vh
+
+  .new-music-img
+    margin-bottom: 20px
+
+  .inner
+
+    img
+      max-width: 400px
+      margin-bottom: 5px
+
+    iframe
+      width: 100%
+      max-width: 400px
+
+@media(max-width: 767px)
+  .new-music-content
+
+    .inner
+
+      img, iframe
+        max-width: none
+        width: 100%
+
+// Footer
+footer 
+  padding: 20px
+  background-color: #f8f9fa
+
+  a
+    color: $link-black
+    transition: all 0.6s
+
+  a:hover 
+    color: rgba(0,0,0,.5)
+    text-decoration: none

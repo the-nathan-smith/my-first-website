@@ -80,8 +80,38 @@ h2, .h2 {
   color: #c359b1;
 }
 
-.new-music-img {
+.new-music-content {
+  min-height: 66.4vh;
+}
+.new-music-content .new-music-img {
   margin-bottom: 20px;
+}
+.new-music-content .inner img {
+  max-width: 400px;
+  margin-bottom: 5px;
+}
+.new-music-content .inner iframe {
+  width: 100%;
+  max-width: 400px;
+}
+
+@media (max-width: 767px) {
+  .new-music-content .inner img, .new-music-content .inner iframe {
+    max-width: none;
+    width: 100%;
+  }
+}
+footer {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+footer a {
+  color: rgba(0, 0, 0, 0.9);
+  transition: all 0.6s;
+}
+footer a:hover {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=website.css.map */
