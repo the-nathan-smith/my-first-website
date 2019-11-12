@@ -1,4 +1,4 @@
-/* Universal */
+/* Colors */
 body {
   height: 100vh;
   font-family: "Archivo Black", sans-serif;
@@ -33,7 +33,6 @@ body {
   font-size: 22px;
 }
 
-/* Headings */
 h1, .h1 {
   font-size: 50px;
 }
@@ -42,7 +41,6 @@ h2, .h2 {
   font-size: 35px;
 }
 
-/* Banner */
 .banner {
   height: 90vh;
   background: linear-gradient(to right, #fc5c7d, #6a82fb);
@@ -52,18 +50,15 @@ h2, .h2 {
   height: 100%;
 }
 
-/* Music Videos (Front Page) */
 .music-videos {
   padding: 80px;
 }
 
-/* Music Videos Media Queries */
 @media (max-width: 991px) {
   .music-videos iframe {
     height: 320px;
   }
 }
-/* Inner Page Content */
 .content-title {
   padding: 80px 0px 40px 0px;
 }
@@ -83,6 +78,10 @@ h2, .h2 {
 
 .album-info a:hover {
   color: #c359b1;
+}
+
+.new-music-img {
+  margin-bottom: 20px;
 }
 
 /*# sourceMappingURL=website.css.map */
