@@ -3,8 +3,12 @@
 $red: #c33434
 $pink: rgb(252, 92, 125)
 $link-black: rgba(0,0,0,.9)
+$almost-black: #212529
     
 // Universal
+a
+  transition: all 0.6s
+
 body
   height: 100vh
   font-family: 'Archivo Black', sans-serif
@@ -16,13 +20,13 @@ body
   color: $red
 
 .btn-black-border
-  border: 3px solid #212529
-  color: #212529
+  border: 3px solid $almost-black
+  color: $almost-black
   transition: all 0.6s
 
 .btn-black-border:hover
   background-color: $pink
-  color: white
+  color: #fff!important
 
 .branding
   background-color: black
@@ -69,7 +73,7 @@ h2, .h2
   font-size: 24px
 
 .album-info a 
-  color: #212529
+  color: $almost-black
   transition: all 0.6s
 
 .album-info a:hover 
@@ -100,6 +104,55 @@ h2, .h2
       img, iframe
         max-width: none
         width: 100%
+
+// Music Videos
+.music-videos-content 
+  min-height: 66.4vh
+
+  .row:nth-child(1)
+    padding-top: 0px
+
+  .row
+    padding: 40px 0px
+
+  a
+    color: $almost-black
+
+  a:hover
+    color: $pink
+
+// Music Video Single
+.music-video-content
+  min-height: 66.4vh
+
+  iframe
+    margin-bottom: 40px
+    width: 100%
+    height: 500px
+
+@media(max-width: 1199px)
+  .music-video-content
+
+    iframe
+      height: 450px
+
+@media(max-width: 991px)
+  .music-video-content
+
+    iframe
+      height: 400px
+
+@media(max-width: 767px)
+  .music-video-content
+
+    iframe
+      height: 300px
+
+// Art Work
+.art-work-content
+
+  img
+    margin-bottom: 20px
 
 // Footer
 footer 
