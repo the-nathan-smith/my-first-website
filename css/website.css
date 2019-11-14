@@ -45,6 +45,10 @@ h2, .h2 {
   font-size: 35px;
 }
 
+.navbar .navbar-collapse {
+  text-align: right;
+}
+
 .banner {
   height: 70vh;
   background: linear-gradient(to right, #fc5c7d, #6a82fb);
