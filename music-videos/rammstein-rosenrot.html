@@ -12,9 +12,6 @@
         <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
         <!-- Stylesheet -->
         <link rel="stylesheet" href="../css/website.css">
-        <!-- CSS Animations -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <!-- Viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Title -->
@@ -77,7 +74,9 @@
             </div>
         </div>
         <script>
-            AOS.init();
+            function mobileMenuAnimation(x) {
+                x.classList.toggle("change");
+            }
         </script>
     </footer>
 </html>

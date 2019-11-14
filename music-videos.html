@@ -11,9 +11,6 @@
         <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
         <!-- Stylesheet -->
         <link rel="stylesheet" href="css/website.css">
-        <!-- CSS Animations -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <!-- Viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Title -->
@@ -26,7 +23,13 @@
                 <a class="navbar-brand" href="#">sKuh™</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon">
+                        <div class="custom-burger-menu" onclick="mobileMenuAnimation(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                    </span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="menu">
@@ -120,7 +123,9 @@
             </div>
         </div>
         <script>
-            AOS.init();
+            function mobileMenuAnimation(x) {
+                x.classList.toggle("change");
+            }
         </script>
     </footer>
 </html>
