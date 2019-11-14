@@ -4,6 +4,7 @@ $red: #c33434
 $pink: rgb(252, 92, 125)
 $link-black: rgba(0,0,0,.9)
 $almost-black: #212529
+$grey: #f8f9fa
     
 // Universal
 a
@@ -56,14 +57,22 @@ h2, .h2
 
 // Music Videos (Front Page)
 .music-videos 
-  padding: 80px
+  padding: 80px 0px
 
 @media(max-width: 991px)
   .music-videos iframe 
     height: 320px
 
-// New Music Home
+@media(max-width: 576px)
+  .music-videos
+    padding: 30px 0px
+
+// New Music Home + Art Work Home
 .new-music-home
+  background-color: $grey
+
+.new-music-home, .art-work-home
+  padding: 60px 0px
 
   img
     width: 100%
@@ -72,6 +81,17 @@ h2, .h2
     border-top: 2px solid #000
     width: 200px
     margin-left: 0
+
+  a
+    color: $almost-black
+
+  a:hover
+    color: $pink
+    text-decoration: none
+
+  @media(max-width: 767px)
+    img
+      padding: 20px 0px
 
 // Inner Page Content
 .content-title 

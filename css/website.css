@@ -56,7 +56,7 @@ h2, .h2 {
 }
 
 .music-videos {
-  padding: 80px;
+  padding: 80px 0px;
 }
 
 @media (max-width: 991px) {
@@ -64,13 +64,37 @@ h2, .h2 {
     height: 320px;
   }
 }
-.new-music-home img {
+@media (max-width: 576px) {
+  .music-videos {
+    padding: 30px 0px;
+  }
+}
+.new-music-home {
+  background-color: #f8f9fa;
+}
+
+.new-music-home, .art-work-home {
+  padding: 60px 0px;
+}
+.new-music-home img, .art-work-home img {
   width: 100%;
 }
-.new-music-home hr {
+.new-music-home hr, .art-work-home hr {
   border-top: 2px solid #000;
   width: 200px;
   margin-left: 0;
+}
+.new-music-home a, .art-work-home a {
+  color: #212529;
+}
+.new-music-home a:hover, .art-work-home a:hover {
+  color: #fc5c7d;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .new-music-home img, .art-work-home img {
+    padding: 20px 0px;
+  }
 }
 
 .content-title {
