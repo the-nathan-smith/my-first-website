@@ -46,8 +46,9 @@ h2, .h2
 
 // Banner
 .banner
-  height: 90vh
+  height: 70vh
   background: linear-gradient(to right, rgb(252, 92, 125), rgb(106, 130, 251))
+  margin-top: 56px
 
   .container 
     display: flex
@@ -57,10 +58,20 @@ h2, .h2
 .music-videos 
   padding: 80px
 
-// Music Videos Media Queries
 @media(max-width: 991px)
   .music-videos iframe 
     height: 320px
+
+// New Music Home
+.new-music-home
+
+  img
+    width: 100%
+
+  hr
+    border-top: 2px solid #000
+    width: 200px
+    margin-left: 0
 
 // Inner Page Content
 .content-title 
@@ -85,6 +96,10 @@ h2, .h2
 
   .new-music-img
     margin-bottom: 20px
+    transition: all 0.6s
+
+  .new-music-img:hover
+    box-shadow: 5px 5px $almost-black
 
   .inner
 
@@ -153,6 +168,36 @@ h2, .h2
 
   img
     margin-bottom: 20px
+
+.art-work-content
+  min-height: 66.4vh
+
+// Contact Page
+.contact-content
+    min-height: 66.4vh
+
+    .contact-details
+      padding: 40px 0px
+
+      ul
+        padding-top: 20px
+        padding-left: 0px
+
+      li 
+        list-style: none
+        display: inline-flex
+        padding: 0px 20px
+
+        a
+          color: #202428
+          font-size: 30px
+
+        a:hover
+          color: $pink
+          text-decoration: none
+
+      li:nth-child(1)
+        padding-left: 0px
 
 // Footer
 footer 

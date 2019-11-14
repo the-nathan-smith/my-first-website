@@ -46,8 +46,9 @@ h2, .h2 {
 }
 
 .banner {
-  height: 90vh;
+  height: 70vh;
   background: linear-gradient(to right, #fc5c7d, #6a82fb);
+  margin-top: 56px;
 }
 .banner .container {
   display: flex;
@@ -63,6 +64,15 @@ h2, .h2 {
     height: 320px;
   }
 }
+.new-music-home img {
+  width: 100%;
+}
+.new-music-home hr {
+  border-top: 2px solid #000;
+  width: 200px;
+  margin-left: 0;
+}
+
 .content-title {
   padding: 80px 0px 40px 0px;
 }
@@ -89,6 +99,10 @@ h2, .h2 {
 }
 .new-music-content .new-music-img {
   margin-bottom: 20px;
+  transition: all 0.6s;
+}
+.new-music-content .new-music-img:hover {
+  box-shadow: 5px 5px #212529;
 }
 .new-music-content .inner img {
   max-width: 400px;
@@ -147,6 +161,37 @@ h2, .h2 {
 }
 .art-work-content img {
   margin-bottom: 20px;
+}
+
+.art-work-content {
+  min-height: 66.4vh;
+}
+
+.contact-content {
+  min-height: 66.4vh;
+}
+.contact-content .contact-details {
+  padding: 40px 0px;
+}
+.contact-content .contact-details ul {
+  padding-top: 20px;
+  padding-left: 0px;
+}
+.contact-content .contact-details li {
+  list-style: none;
+  display: inline-flex;
+  padding: 0px 20px;
+}
+.contact-content .contact-details li a {
+  color: #202428;
+  font-size: 30px;
+}
+.contact-content .contact-details li a:hover {
+  color: #fc5c7d;
+  text-decoration: none;
+}
+.contact-content .contact-details li:nth-child(1) {
+  padding-left: 0px;
 }
 
 footer {
